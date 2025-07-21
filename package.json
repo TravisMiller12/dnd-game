@@ -11,5 +11,13 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TravisMiller12/dnd-game.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TravisMiller12/dnd-game/issues"
+  },
+  "homepage": "https://github.com/TravisMiller12/dnd-game#readme"
 }
