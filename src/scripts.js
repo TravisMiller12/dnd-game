@@ -31,6 +31,7 @@ log out who the winner was
 
 */
 
+/*
 class mage{
     constructor(name, health, strength, armourClass){
         this.name = name;
@@ -75,6 +76,7 @@ class warrior{
        
     }
 }
+    */
 
 const newMage = new mage('Merlin', 50, 1, 10);
 const newWarrior = new warrior('Arthur', 50, 2, 12, 10, 0);
