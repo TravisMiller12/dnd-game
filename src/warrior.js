@@ -1,4 +1,4 @@
-class warrior{
+export class warrior{
     constructor(name, health, strength, armourClass, rageThreshold){
         this.name = name;
         this.health = health;

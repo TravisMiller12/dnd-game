@@ -1,4 +1,4 @@
-class mage{
+export class mage{
     constructor(name, health, strength, armourClass){
         this.name = name;
         this.health = health;

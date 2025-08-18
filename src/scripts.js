@@ -78,6 +78,9 @@ class warrior{
 }
     */
 
+import { mage } from "./mage.js";
+import { warrior } from "./warrior.js";
+
 const newMage = new mage('Merlin', 50, 1, 10);
 const newWarrior = new warrior('Arthur', 50, 2, 12, 10, 0);
 
