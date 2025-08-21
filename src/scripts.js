@@ -81,6 +81,15 @@ class warrior{
 import { mage } from "./mage.js";
 import { warrior } from "./warrior.js";
 
+import { initPixi, app } from "./pixi.js";
+
+window.onload = () => {
+    initPixi();
+    console.log("Pixi app created:", app);
+};
+
+
+
 const newMage = new mage('Merlin', 50, 1, 10);
 const newWarrior = new warrior('Arthur', 50, 2, 12, 10, 0);
 
