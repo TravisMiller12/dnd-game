@@ -88,7 +88,15 @@ window.onload = () => {
     console.log("Pixi app created:", app);
 };
 
+const importAll = (r) => r.keys().map(r);
 
+const runFrames = importAll(
+    require.context('./assets/sequences/skull', false, /\.png$/)
+);
+
+runFrames.sort();
+
+console.log('Loaded frames: ', runFrames.length);
 
 const newMage = new mage('Merlin', 50, 1, 10);
 const newWarrior = new warrior('Arthur', 50, 2, 12, 10, 0);
@@ -160,3 +168,21 @@ if (newMage.health <= 0)
     } else if (newWarrior.health <= 0){
         console.log("Arthur has died. Merlin is the winner!");
     }
+
+const img = document.createElement('img');
+img.style.width = '256px';
+document.body.appendChild(img);
+
+let frame = 0;
+
+function play(frames, fps = 30) {
+  const interval = 1000 / fps;
+
+  setInterval(() => {
+    img.src = frames[frame];
+    frame = (frame + 1) % frames.length;
+  }, interval);
+}
+
+// Make sure this matches the variable name you imported
+play(runFrames, 30);
